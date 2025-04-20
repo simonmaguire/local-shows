@@ -1,0 +1,156 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+#banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #72bf78;
+}
+#user-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#user-group * {
+  margin-right: 12px;
+}
+#user-group button {
+  height: fit-content;
+}
+.main-content {
+  margin-top: 100px;
+}
+
+#profile-img {
+  align-self: center;
+  max-width: 50px;
+  border-radius: 24px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  border: 2px solid #72bf78;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expanded-day-link {
+  color: #72bf78;
+}
+
+.expanded-day-link:hover {
+  color: #36713b;
+}
+
+#playlist-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#playlist-song-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-song {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  border: beige 1px;
+  border-style: dashed;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  padding-left: 4px;
+}
+
+.playlist-song-details {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-song-details p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.img-placeholder {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h4,
+h1 {
+  color: #feff9f;
+}
+
+.overflow-show {
+  display: none;
+}
+@media (max-width: 768px) {
+  #calendar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mobile-hidden h4 {
+    display: none;
+  }
+}
+
+#shows-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#show-info-header {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.show-row {
+  grid-column: 1 / 6;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.concert-group {
+  grid-column: 1 / 5;
+}
+
+.concert-artists {
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}

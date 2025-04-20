@@ -1,2 +1,4 @@
 .env
 shows.db
+.flaskenv
+api/venv
